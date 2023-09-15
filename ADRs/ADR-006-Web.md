@@ -8,7 +8,7 @@ We are designing the architecture for Road Warrior project, and one of the key c
 ## Decision
 We have decided to adopt React.js as our primary framework for building the user interface for the following reasons:
 
-# Component-Based Architecture: React.js offers a component-based architecture that promotes reusability, maintainability, and modular development, which aligns well with our project's requirements.
+## Component-Based Architecture: ### React.js offers a component-based architecture that promotes reusability, maintainability, and modular development, which aligns well with our project's requirements.
 
 # Virtual DOM: React's Virtual DOM minimizes DOM manipulation, improving performance and providing a smoother user experience.
 
