@@ -1,4 +1,4 @@
-## ADR 002: Adoption of Go for Microservices
+## ADR 002: Adoption of Programming Language for Microservices
 ## Status: Proposed
 
 ## Context
@@ -19,16 +19,12 @@ We have decided to adopt the Go programming language (Golang) as our primary lan
 
 **Static Typing**: Go's static typing helps catch errors at compile-time, reducing the likelihood of runtime errors and improving code reliability.
 
-**Cross-Platform**: Go supports cross-platform development and can be compiled for various operating systems and architectures.
-
 **Strong Ecosystem**: Go has a strong and growing ecosystem of libraries, frameworks (e.g., Gin, Echo for web services), and tools (e.g., gofmt, go vet) that facilitate development and maintenance.
 
 ## Consequences
 By adopting Go as our primary programming language, we accept the following consequences:
 
-Team members may need to learn Go if they are not already familiar with it.
-We will need to manage dependencies and third-party libraries carefully, as Go has a preference for a minimalistic standard library.
-
+Team members who are not already familiar with Go can easily learn it since it is a simple language with fewer programming constructs.
 
 ## Alternatives
 ### Alternative 1: Node.js (JavaScript/TypeScript)
@@ -45,7 +41,7 @@ We will need to manage dependencies and third-party libraries carefully, as Go h
 
 
 ## Decision Rationale
-Go was chosen because it aligns with our project requirements for high performance, scalability, and maintainability. Its built-in concurrency support, strong ecosystem, and static typing make it well-suited for building backend services efficiently. While other alternatives were considered, Go's combination of performance and simplicity makes it a strong choice for our software development project.
+Go was chosen because it aligns with our project requirements for Faster developemnt, minimal learning curve, high performance, scalability, and maintainability. Its built-in concurrency support, strong ecosystem, and static typing make it well-suited for building backend services efficiently. While other alternatives were considered, Go's combination of performance and simplicity makes it a strong choice for our software development project.
 
 ## References
 Go Programming Language  
