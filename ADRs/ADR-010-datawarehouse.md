@@ -3,7 +3,7 @@
 ### Status: Proposed
 
 ## Context
-Our organization is building an analytics system to collect, store, and analyze user data from our applications. This data includes user interactions, events, and other relevant information. To effectively manage and analyze this data, we need to select a suitable database management system.
+We have to build a reporting  and analytics system to collect, store, and analyze user data from our applications. This data includes user interactions, events, and other relevant information. To effectively manage and analyze this data, we need to select a suitable database management system.
 
 ## Decision
 After careful evaluation, we have decided to use PostgreSQL as the primary database for storing analytics records. This decision is based on the following considerations:
