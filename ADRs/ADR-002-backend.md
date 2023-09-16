@@ -39,7 +39,7 @@ We will need to manage dependencies and third-party libraries carefully, as Go h
 **Pros**: Known for simplicity and readability, extensive standard library, broad community support.  
 **Cons**: Slower performance compared to Go, GIL (Global Interpreter Lock) limitations for concurrent execution.
 
-### Alternative 2: Java
+### Alternative 3: Java
 **Pros**: Rich Ecosystem,Strong Typing,Scalability, Developer Talent Pool etc.  
 **Cons**: Complexity , Resource Consumption, Cold Start Times and etc.
 
