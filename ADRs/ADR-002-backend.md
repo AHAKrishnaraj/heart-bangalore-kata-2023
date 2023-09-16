@@ -48,6 +48,6 @@ We will need to manage dependencies and third-party libraries carefully, as Go h
 Go was chosen because it aligns with our project requirements for high performance, scalability, and maintainability. Its built-in concurrency support, strong ecosystem, and static typing make it well-suited for building backend services efficiently. While other alternatives were considered, Go's combination of performance and simplicity makes it a strong choice for our software development project.
 
 ## References
-Go Programming Language
+Go Programming Language  
 Gin Web Framework
-Echo Web Framework
+
