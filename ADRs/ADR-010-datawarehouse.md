@@ -1,26 +1,24 @@
-## ADR 010: Adoption of Amazon Redshift as Data Warehousing Solution for Analytics 
+## ADR 010: Adoption of PostgreSQL for Analytics and reporting
 
 ### Status: Proposed
 
 ## Context
-We are designing the architecture for our data warehousing solution to support analytics, reporting, and business intelligence for our organization. Our data requirements include the storage and analysis of large volumes of structured data from various sources.
+Our organization is building an analytics system to collect, store, and analyze user data from our applications. This data includes user interactions, events, and other relevant information. To effectively manage and analyze this data, we need to select a suitable database management system.
 
 ## Decision
-We have decided to adopt Amazon Redshift as our data warehousing solution for the following reasons:
+After careful evaluation, we have decided to use PostgreSQL as the primary database for storing analytics records. This decision is based on the following considerations:
 
-**Scalability**: Amazon Redshift is a scalable, columnar data warehouse that can handle large volumes of data and high concurrent query workloads. It allows us to start small and easily scale as our data and query requirements grow.
+**Mature and Reliable**: PostgreSQL is a mature, open-source relational database management system known for its reliability and stability. It has a proven track record in handling large datasets.
 
-**Performance**: Redshift's architecture is optimized for analytical queries, and it offers exceptional query performance. It leverages columnar storage, compression, and parallel processing to deliver fast query results.
+**Scalability**: PostgreSQL offers options for horizontal and vertical scaling, enabling us to handle increasing data volumes and high query loads as our analytics system grows.
 
-**Integration with AWS**: We are already using Amazon Web Services (AWS) for other parts of our infrastructure, and Redshift seamlessly integrates with AWS services, such as S3 for data storage and IAM for security.
+**Extensible**: PostgreSQL's extensibility allows us to add custom functions and extensions to meet specific analytical requirements. This flexibility is essential for tailoring the system to our needs.
 
-**Data Compression**: Redshift's automatic data compression reduces storage costs and improves query performance by minimizing I/O.
+**Community and Ecosystem**: PostgreSQL has a vibrant and active community, which ensures ongoing support, security updates, and access to a wide range of extensions and tools.
 
-**Advanced Analytics**: Redshift supports advanced analytics through SQL-based queries and integration with analytics tools such as Amazon QuickSight and Tableau.
+**Performance**: PostgreSQL is known for its excellent performance, especially when properly optimized. We can leverage indexing, partitioning, and other performance-enhancing features to ensure responsive analytics queries.
 
-**Security and Compliance**: Redshift offers robust security features, including encryption at rest and in transit, fine-grained access control, and compliance certifications (e.g., SOC 2, HIPAA).
-
-**Ease of Management**: Redshift is fully managed, and AWS takes care of routine administrative tasks like backups, patching, and scaling, reducing operational overhead.
+**Data Integrity**: PostgreSQL enforces data integrity constraints, ensuring the accuracy and reliability of our analytics data.
 
 ## Consequences
 By adopting Amazon Redshift as our data warehousing solution, we accept the following consequences:
@@ -28,11 +26,15 @@ By adopting Amazon Redshift as our data warehousing solution, we accept the foll
 We will incur costs associated with Redshift usage, including data storage and query costs.
 Team members will need to become familiar with Redshift's SQL dialect and its specific features for optimization.
 ## Alternatives
-## Alternative 1: On-Premises Data Warehouse
+## Alternative 1: Snowflake
 **Pros**: Full control over hardware and infrastructure, potentially lower data storage costs.  
 **Cons**: Higher upfront hardware and maintenance costs, limited scalability, longer setup time.
 
 ## Alternative 2: Google BigQuery
+**Pros**: Serverless, scalable, and fully managed data warehouse solution.  
+**Cons**: May involve data migration challenges if not already using Google Cloud, query costs can vary depending on usage.
+
+## Alternative 2: Red shift
 **Pros**: Serverless, scalable, and fully managed data warehouse solution.  
 **Cons**: May involve data migration challenges if not already using Google Cloud, query costs can vary depending on usage.
 
