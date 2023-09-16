@@ -1,6 +1,6 @@
 ## ADR 007: Adoption of React Native for Mobile App Development
 
-## Status:  Accepted 
+### Status: Proposed
 ## Context
 We are embarking on a new mobile app development project and need to choose the technology stack for building the mobile application. The project's requirements include targeting both iOS and Android platforms, maintaining code reusability, and ensuring a responsive and performant user experience.
 
