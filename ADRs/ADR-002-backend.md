@@ -1,11 +1,13 @@
-## ADR 002: Adoption of Go for Software Development
+## ADR 002: Adoption of Go for Microservices
 ## Status: Proposed
 
 ## Context
-We are starting a new software development project and need to choose a programming language for implementing the project's backend services. Our project requirements include high performance, scalability, maintainability, and efficient resource utilization.
+We are starting a Road Warriors Application and need to choose a programming language for our MIcroservices services. Our requirements include high performance, scalability, maintainability, and efficient resource utilization.
 
 ## Decision
-We have decided to adopt the Go programming language (Golang) as our primary language for software development for the following reasons:
+We have decided to adopt the Go programming language (Golang) as our primary language for Road Warriors Application for the following reasons:
+
+Microservice Support : Using Go with the Gin web framework is a popular choice for building microservices due to the efficiency and performance of Go and the rapid development capabilities provided by Gin.
 
 Concise and Readable Syntax: Go has a simple and clean syntax that is easy to read and maintain. This will enhance the maintainability of our codebase.
 
