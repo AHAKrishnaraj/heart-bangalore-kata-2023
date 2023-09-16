@@ -1,5 +1,5 @@
 ## ADR 012: Adoption of Krakend API Gateway
-## Status: Proposed
+### Status: Proposed
 ## Context
 We are in the process of designing and implementing the architecture for our microservices-based application. One of the key requirements for our application is to efficiently manage and expose a set of microservices as APIs, ensuring security, rate limiting, and centralized configuration.
 
