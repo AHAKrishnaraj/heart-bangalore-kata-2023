@@ -37,7 +37,7 @@ Team members who are not already familiar with Go can easily learn it since it i
 
 ### Alternative 3: Java
 **Pros**: Rich Ecosystem,Strong Typing,Scalability, Developer Talent Pool etc.  
-**Cons**: Complexity , Resource Consumption, Cold Start Times and etc.
+**Cons**: Development speed , Complexity , Resource Consumption, Cold Start Times and etc.
 
 
 ## Decision Rationale
