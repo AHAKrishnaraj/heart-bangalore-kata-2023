@@ -1,6 +1,6 @@
 ## ADR 006: Adoption of React.js for User Interface
 
-## Status: Accepted
+### Status: Proposed
 
 ## Context
 We are designing the architecture for Road Warrior project, and one of the key considerations is choosing the technology for building the user interface. The user interface plays a critical role in our application, and we need to select a framework or library that can provide a modern, efficient, and maintainable UI solution.
