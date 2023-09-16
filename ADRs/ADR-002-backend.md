@@ -1,12 +1,10 @@
-ADR 001: Adoption of Go for Software Development
-Date: [Date]
-Status: [Proposed | Accepted | Rejected | Deprecated | Superseded]
-Author: [Your Name]
-Deciders: [List of people who participated in the decision]
-Context
+ADR 002: Adoption of Go for Software Development
+Status: Proposed
+
+## Context
 We are starting a new software development project and need to choose a programming language for implementing the project's backend services. Our project requirements include high performance, scalability, maintainability, and efficient resource utilization.
 
-Decision
+## Decision
 We have decided to adopt the Go programming language (Golang) as our primary language for software development for the following reasons:
 
 Concise and Readable Syntax: Go has a simple and clean syntax that is easy to read and maintain. This will enhance the maintainability of our codebase.
@@ -23,22 +21,22 @@ Cross-Platform: Go supports cross-platform development and can be compiled for v
 
 Strong Ecosystem: Go has a strong and growing ecosystem of libraries, frameworks (e.g., Gin, Echo for web services), and tools (e.g., gofmt, go vet) that facilitate development and maintenance.
 
-Consequences
+## Consequences
 By adopting Go as our primary programming language, we accept the following consequences:
 
 Team members may need to learn Go if they are not already familiar with it.
 We will need to manage dependencies and third-party libraries carefully, as Go has a preference for a minimalistic standard library.
-Alternatives
+## Alternatives
 Alternative 1: Node.js (JavaScript/TypeScript)
 Pros: Familiarity for web developers, strong ecosystem, non-blocking I/O for high concurrency.
 Cons: Single-threaded, callback-based async programming can lead to complex code, not as efficient as Go for CPU-bound tasks.
 Alternative 2: Python
 Pros: Known for simplicity and readability, extensive standard library, broad community support.
 Cons: Slower performance compared to Go, GIL (Global Interpreter Lock) limitations for concurrent execution.
-Decision Rationale
+## Decision Rationale
 Go was chosen because it aligns with our project requirements for high performance, scalability, and maintainability. Its built-in concurrency support, strong ecosystem, and static typing make it well-suited for building backend services efficiently. While other alternatives were considered, Go's combination of performance and simplicity makes it a strong choice for our software development project.
 
-References
+## References
 Go Programming Language
 Gin Web Framework
 Echo Web Framework
