@@ -27,12 +27,15 @@ By adopting Go as our primary programming language, we accept the following cons
 Team members may need to learn Go if they are not already familiar with it.
 We will need to manage dependencies and third-party libraries carefully, as Go has a preference for a minimalistic standard library.
 ## Alternatives
-Alternative 1: Node.js (JavaScript/TypeScript)
+### Alternative 1: Node.js (JavaScript/TypeScript)
 Pros: Familiarity for web developers, strong ecosystem, non-blocking I/O for high concurrency.
 Cons: Single-threaded, callback-based async programming can lead to complex code, not as efficient as Go for CPU-bound tasks.
-Alternative 2: Python
+### Alternative 2: Python
 Pros: Known for simplicity and readability, extensive standard library, broad community support.
 Cons: Slower performance compared to Go, GIL (Global Interpreter Lock) limitations for concurrent execution.
+### Alternative 2: Java
+Pros: Rich Ecosystem,Strong Typing,Scalability, Developer Talent Pool etc.
+Cons: Complexity , Resource Consumption, Cold Start Times and etc.
 ## Decision Rationale
 Go was chosen because it aligns with our project requirements for high performance, scalability, and maintainability. Its built-in concurrency support, strong ecosystem, and static typing make it well-suited for building backend services efficiently. While other alternatives were considered, Go's combination of performance and simplicity makes it a strong choice for our software development project.
 
