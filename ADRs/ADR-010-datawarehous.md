@@ -1,6 +1,6 @@
 ## ADR 010: Adoption of Amazon Redshift as Data Warehousing Solution
 
-## Status: Proposed
+### Status: Proposed
 
 ## Context
 We are designing the architecture for our data warehousing solution to support analytics, reporting, and business intelligence for our organization. Our data requirements include the storage and analysis of large volumes of structured data from various sources.
