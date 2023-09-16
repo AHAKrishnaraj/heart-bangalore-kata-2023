@@ -1,10 +1,12 @@
 ## ADR 012: Adoption of Krakend API Gateway for Microservices
+
 ### Status: Proposed
+
 ## Context
 We are in the process of designing and implementing the architecture for our microservices-based application. One of the key requirements for our application is to efficiently manage and expose a set of microservices as APIs, ensuring security, rate limiting, and centralized configuration.
 
 ## Decision
-We have decided to adopt the Krakend API Gateway as our primary solution for managing and exposing microservices as APIs for the following reasons:
+As we have chosen Golang as our primary programming language, we have also decided to adopt the Krakend API Gateway as our primary solution for managing and exposing microservices through APIs.Following are the capabilities of Krakend
 
 **Microservices Integration**: Krakend provides seamless integration with our microservices architecture, allowing us to aggregate, route, and expose multiple microservices through a unified API gateway.
 
@@ -28,7 +30,7 @@ We will need to ensure the availability and scalability of the Krakend infrastru
 **Pros**: Complete customization and control over the API gateway's behavior.  
 **Cons**: Development and maintenance effort, potentially longer time to market.
 
-## Alternative 2: Use a Different API Gateway (e.g., Nginx, Kong)
+## Alternative 2: Use a Different API Gateway (e.g.Kong,AWS API Gateway,Zuul,Tyk,Traefic)
 **Pros**: Familiarity with existing tools, potential cost savings.  
 **Cons**: May require more extensive customization, limited support for microservices-specific features.
 
