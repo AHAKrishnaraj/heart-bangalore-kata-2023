@@ -1,5 +1,5 @@
-ADR 002: Adoption of Go for Software Development
-Status: Proposed
+## ADR 002: Adoption of Go for Software Development
+## Status: Proposed
 
 ## Context
 We are starting a new software development project and need to choose a programming language for implementing the project's backend services. Our project requirements include high performance, scalability, maintainability, and efficient resource utilization.
