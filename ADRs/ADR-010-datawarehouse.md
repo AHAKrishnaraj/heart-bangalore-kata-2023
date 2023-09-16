@@ -6,7 +6,11 @@
 We have to build a reporting  and analytics system to collect, store, and analyze user data from our applications. This data includes user interactions, events, and other relevant information. To effectively manage and analyze this data, we need to select a suitable database management system.
 
 ## Decision
-After careful evaluation, we have decided to use PostgreSQL as the primary database for storing analytics records. This decision is based on the following considerations:
+After careful evaluation, we have decided to use PostgreSQL as the primary database for storing analytics records.
+
+Current scalability can be achieved using PostgreSQL, and if the need arises to transition to a more analytical database like Redshift, this transition can be executed with relative ease and minimal effort.
+
+This decision is based on the following considerations:
 
 **Mature and Reliable**: PostgreSQL is a mature, open-source relational database management system known for its reliability and stability. It has a proven track record in handling large datasets.
 
@@ -21,27 +25,26 @@ After careful evaluation, we have decided to use PostgreSQL as the primary datab
 **Data Integrity**: PostgreSQL enforces data integrity constraints, ensuring the accuracy and reliability of our analytics data.
 
 ## Consequences
-By adopting Amazon Redshift as our data warehousing solution, we accept the following consequences:
+By adopting PostgreSQL as our reportying and analytics solution, we accept the following consequences:
 
-We will incur costs associated with Redshift usage, including data storage and query costs.
-Team members will need to become familiar with Redshift's SQL dialect and its specific features for optimization.
+Scaling PostgreSQL horizontally can be complex and may require expertise in database management. Managing a large and growing dataset may pose challenges.
+
 ## Alternatives
 ## Alternative 1: Snowflake
-**Pros**: Full control over hardware and infrastructure, potentially lower data storage costs.  
-**Cons**: Higher upfront hardware and maintenance costs, limited scalability, longer setup time.
+**Pros**: Cloud-Native, Scalability,Concurrency, and etc.    
+**Cons**: Cost and complexity.
 
 ## Alternative 2: Google BigQuery
-**Pros**: Serverless, scalable, and fully managed data warehouse solution.  
-**Cons**: May involve data migration challenges if not already using Google Cloud, query costs can vary depending on usage.
+**Pros**: Serverless and Fully Managed,Scalability,Speed,Serverless Cost Model and etc.  
+**Cons**: Cost for Frequent Usage and Learning Curve.  
 
 ## Alternative 2: Red shift
-**Pros**: Serverless, scalable, and fully managed data warehouse solution.  
-**Cons**: May involve data migration challenges if not already using Google Cloud, query costs can vary depending on usage.
+**Pros**: Data Warehousing, Massive Scalability, Concurrency, Integration with AWS and etc.    
+**Cons**: Cost and Complexity.
 
 ## Decision Rationale
-Amazon Redshift was chosen because it aligns with our project requirements for scalability, performance, and integration with our existing AWS infrastructure. Its ability to handle large volumes of data and advanced analytics capabilities make it a strong choice for our data warehousing needs. While alternatives were considered, Redshift's combination of features and seamless integration with AWS makes it well-suited for our organization's data analytics and reporting needs.
+PostgreSQL can be an excellent choice for startups looking to strike a balance between cost-effectiveness, versatility, and scalability. While Redshift excels in specific use cases, PostgreSQL's open-source nature, cost-effectiveness, and adaptability make it a compelling option for startups that need a solid foundation for their database needs while staying mindful of budget constraints.
 
 ## References
-Amazon Redshift  
-Amazon Redshift Documentation
+PostgreSQL  
 
